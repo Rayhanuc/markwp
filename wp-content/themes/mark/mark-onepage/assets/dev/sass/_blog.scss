@@ -1,0 +1,36 @@
+.blog-block {
+  box-shadow: 0 0 40px rgba(0, 0, 0, .1);
+  .img-block-txt {
+    padding-right: 30%;
+  }
+  h2{
+    a{
+      color: $black-light;
+      &:hover{
+        color: $primary-color;
+      }
+    }
+  }
+  img{
+    position: absolute;
+    left: -20%;
+    top: 16%;
+    border: 15px solid $white;
+    max-width: 600px;
+    height: auto;
+  }
+
+  .blog-bg-height {
+    min-height: 650px;
+  }
+}
+
+.meta {
+  color: $black-lighter-alt;
+  a{
+    color: $black-lighter-alt;
+    &:hover{
+      color: $primary-color;
+    }
+  }
+}
