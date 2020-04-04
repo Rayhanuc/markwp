@@ -20,10 +20,11 @@ function mark_theme_setup() {
 add_action('after_setup_theme', 'mark_theme_setup');
 
 function mark_assets(){
+    // css enqueue start
     $css_files = array(
         'google-fonts-css' => ASSETS_DIR.'//fonts.googleapis.com/css?family=Cabin|Open+Sans:300,400,600,700',
-        'fontawesome-css' => ASSETS_DIR.'vendor/bootstrap/css/bootstrap.min.css',
-        // 'bootstrap-css' => ASSETS_DIR.'vendor/font-awesome/css/font-awesome.min.css',
+        'bootstrap-css' => ASSETS_DIR.'vendor/bootstrap/css/bootstrap.min.css',
+        'fontawesome-css' => ASSETS_DIR.'vendor/font-awesome/css/font-awesome.min.css',
         'bicon-css' => ASSETS_DIR.'vendor/bicon/css/bicon.css',
         'owlcarousel-css' => ASSETS_DIR.'vendor/owl/assets/owl.carousel.min.css',
         'owlcarousel-theme-css' => ASSETS_DIR.'vendor/owl/assets/owl.theme.default.min.css',
@@ -37,13 +38,25 @@ function mark_assets(){
     }
 
     wp_enqueue_style('mark-css', get_stylesheet_uri(), null, VERSION);
+    // css enqueue end
+
+    // js enqueue start
+    $js_files = array(
+        'bootstrap-js' => array('src'=>ASSETS_DIR.'vendor/bootstrap/js/bootstrap.min.js', 'dep'=>array('jquery')),
+        'owlcarousel-js' => array('src'=>ASSETS_DIR.'vendor/owl/owl.carousel.min.js', 'dep'=>array('jquery')),
+        'magnific-popup-js' => array('src'=>ASSETS_DIR.'vendor/magnific-popup/jquery.magnific-popup.min.js', 'dep'=>array('jquery')),
+        'wow-js' => array('src'=>ASSETS_DIR.'vendor/wow.min.js', 'dep'=>array('jquery')),
+        'visible-js' => array('src'=>ASSETS_DIR.'vendor/visible.js', 'dep'=>array('jquery')),
+        'jquery-animatenumber-js' => array('src'=>ASSETS_DIR.'vendor/jquery.animateNumber.min.js', 'dep'=>array('jquery')),
+        'isotope-js' => array('src'=>ASSETS_DIR.'vendor/jquery.isotope.js'),
+        'imagesloaded-js' => array('src'=>ASSETS_DIR.'vendor/imagesloaded.js'),
+        'mark-js' => array('src'=>ASSETS_DIR.'js/scripts.js', 'dep'=>array('jquery')),
+    );
+
+    foreach ($js_files as $handle=>$js_file) {
+        wp_enqueue_script($handle, $js_file['src'], $js_file['dep'], VERSION, true);
+    }
+    // js enqueue end
 }
 add_action('wp_enqueue_scripts','mark_assets');
 
-
-/*
-    <!--animate css-->
-    <link rel="stylesheet" href="assets/vendor/animate.css">
-
-    <!--custom css-->
-    <link href="assets/css/main.css" rel="stylesheet"> */
