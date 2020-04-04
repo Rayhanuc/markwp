@@ -1,5 +1,15 @@
 <?php
 
+require_once (get_theme_file_path("/library/csf/cs-framework.php"));
+
+ // active modules
+define( 'CS_ACTIVE_FRAMEWORK',   false  );
+define( 'CS_ACTIVE_METABOX',     true  );
+define( 'CS_ACTIVE_TAXONOMY',    false  );
+define( 'CS_ACTIVE_SHORTCODE',   false  );
+define( 'CS_ACTIVE_CUSTOMIZE',   false  );
+define( 'CS_ACTIVE_LIGHT_THEME', false );
+
 define("VERSION", time());
 define("ASSETS_DIR", get_template_directory_uri()."/assets/");
 function mark_theme_setup() {
