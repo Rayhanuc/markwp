@@ -1,0 +1,60 @@
+/*------------------------------------
+ header
+------------------------------------*/
+
+.app-header {
+  padding-top: 3rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1230;
+  transition: all .3s ease;
+  font-family: $base-font-name;
+  .navbar-nav {
+    .nav-item {
+      margin-bottom: 0;
+      .nav-link, .dropdown-item{
+        color: $white;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 700;
+      }
+      .dropdown-menu {
+        min-width: 12rem;
+        padding: 1rem 0;
+        margin: .5rem 0 0;
+        background-color: $black;
+        border: none;
+        border-radius: .25rem;
+        .dropdown-item{
+          padding: .5rem 1.5rem;
+          font-size: 12px;
+          &:hover{
+            background-color: transparent;
+            color: #ffe089;
+          }
+        }
+      }
+    }
+
+    .nav-item.active {
+      .nav-link{
+        color: #ffe089;
+      }
+    }
+
+  }
+}
+
+.sticky-header{
+  padding-top: 0;
+  background: #151515;
+//  background-image: linear-gradient(to bottom right,#9d5df5,#3477f2);
+  .navbar-nav {
+    .nav-link{
+      color: $white;
+    }
+  }
+}
+
