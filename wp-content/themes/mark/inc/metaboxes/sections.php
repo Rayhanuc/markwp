@@ -1,6 +1,6 @@
 <?php
 
-function mark_section_type_metabox(){
+function mark_section_type_metabox($metaboxes){
     $metaboxes[] = array(
         'id' => 'mark-section-type',
         'title' => __('Section Type', 'mark'),
