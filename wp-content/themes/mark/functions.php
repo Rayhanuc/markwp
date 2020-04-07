@@ -1,6 +1,7 @@
 <?php
 
 require_once (get_theme_file_path("/library/csf/cs-framework.php"));
+require_once (get_theme_file_path("/inc/metaboxes/sections.php"));
 
  // active modules
 define( 'CS_ACTIVE_FRAMEWORK',   false  );
@@ -70,3 +71,7 @@ function mark_assets(){
 }
 add_action('wp_enqueue_scripts','mark_assets');
 
+function mark_csf_init() {
+    CSFramework_Metabox::instance(array());
+}
+add_action('init','mark_csf_init');
