@@ -3,10 +3,23 @@
 /* 
 Template Name: Mark Landing Page
  */
-?>
+get_header(); 
 
-<?php get_header(); ?>
+$mark_sections = get_post_meta(get_the_ID(), 'mark-page-section', true);
+// print_r($mark_sections);
+if(isset($mark_sections['sections'])) {
+	foreach ($mark_sections['sections'] as $mark_section) {
+		$mark_section_meta = get_post_meta($mark_section['section'], 'mark-section-type', true);
+		// print_r($mark_section_meta);
+		$mark_sectin_type = $mark_section_meta['section-type'];
+		// echo $mark_sectin_type;
+		get_template_part("section-templates/{$mark_sectin_type}");
+	}
+}
 
 
 
-<?php get_footer(); ?>
+
+
+
+get_footer(); ?>
