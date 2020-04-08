@@ -3,6 +3,7 @@
 require_once (get_theme_file_path("/library/csf/cs-framework.php"));
 require_once (get_theme_file_path("/inc/metaboxes/sections.php"));
 require_once (get_theme_file_path("/inc/metaboxes/banner.php"));
+require_once (get_theme_file_path("/inc/metaboxes/page-sections.php"));
 
  // active modules
 define( 'CS_ACTIVE_FRAMEWORK',   false  );

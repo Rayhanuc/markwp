@@ -55,6 +55,12 @@ class CSFramework_Option_group extends CSFramework_Options {
 
           $title = ( isset( $this->value[$key][$field_id] ) ) ? $this->value[$key][$field_id] : '';
 
+          // New code added by user start =====================
+          if ('section' == $field_id) {
+            $title = get_the_title($this->value[$key][$field_id]);
+          }
+          // New code added by user end =======================
+          
           if ( is_array( $title ) && isset( $this->multilang ) ) {
             $lang  = cs_language_defaults();
             $title = $title[$lang['current']];
