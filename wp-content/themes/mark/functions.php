@@ -67,7 +67,7 @@ function mark_assets(){
     );
 
     foreach ($js_files as $handle=>$js_file) {
-        wp_enqueue_script($handle, $js_file['src'], $js_file['dep'], VERSION, true);
+        wp_enqueue_script($handle, $js_file['src'], isset($js_file['dep']) ? $js_file['dep']:null, VERSION, true);
     }
     // js enqueue end
 }
