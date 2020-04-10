@@ -29,6 +29,8 @@ function mark_theme_setup() {
     ) );
     add_theme_support( 'custom-logo' );
     register_nav_menu("top-menu", __("Top Menu", "mark"));
+
+    add_image_size('mark-fullsize', 1400, 99999);
 }
 add_action('after_setup_theme', 'mark_theme_setup');
 

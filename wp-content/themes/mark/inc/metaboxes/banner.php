@@ -58,19 +58,19 @@ function mark_section_banner_metabox($metaboxes){
                         'id' => 'button-one-url',
                         'type' => 'text',
                         'title' => __('Button One URL', 'mark'),
-                        'dependency'   => array( 'button-one-label', '!=', '' ),                       
+                        'dependency'   => array( 'button-one-label', '!=', '' )                       
                     ),
                     array(
                         'id' => 'button-two-label',
                         'type' => 'text',
-                        'title' => __('Button Two Label', 'mark'),                        
+                        'title' => __('Button Two Label', 'mark'),                       
                         'default' => __('PURCHASE NOW', 'mark'),                       
                     ),
                     array(
                         'id' => 'button-two-url',
                         'type' => 'text',
                         'title' => __('Button Two URL', 'mark'),
-                        'dependency'   => array( 'button-two-label', '!=', '' ),                        
+                        'dependency'   => array( 'button-two-label', '!=', '' )
                     ),
                     
                 )
