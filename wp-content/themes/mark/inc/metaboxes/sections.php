@@ -19,7 +19,7 @@ function mark_section_type_metabox($metaboxes){
                         'options' => array(
                             'banner' => __('Banner', 'mark'),
                             'mission' => __('Mission', 'mark'),
-                            'info' => __('Info', 'mark'),
+                            'features' => __('Info', 'mark'),
                             'about' => __('About', 'mark'),
                             'services' => __('Services', 'mark'),
                             'benefits' => __('Benefits', 'mark'),
