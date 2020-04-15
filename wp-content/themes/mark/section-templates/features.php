@@ -15,7 +15,7 @@ $mark_section_meta = get_post_meta( $mark_section['section'], 'mark-features-sec
             if(isset($mark_section_meta['features'])) :
                 foreach ($mark_section_meta['features'] as $mark_feature) :
                     $mark_feature_icon = wp_get_attachment_image_src( $mark_feature['icon']);
-             ?>
+            ?>
             <div class="col-lg-4 col-md-6">
                 <div class="feature-list text-center">
 
