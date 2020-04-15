@@ -3,8 +3,6 @@
 global $mark_section;
 $mark_section_meta = get_post_meta( $mark_section['section'], 'mark-section-mission', true );
 
-
-
 ?>
 
 <!--about section start-->
