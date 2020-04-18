@@ -2,7 +2,6 @@
 <?php
 global $mark_section;
 $mark_section_meta = get_post_meta( $mark_section['section'], 'mark-features-section', true );
-
 ?>
 
 <!--feature section start-->

@@ -6,6 +6,9 @@ require_once (get_theme_file_path("/inc/metaboxes/banner.php"));
 require_once (get_theme_file_path("/inc/metaboxes/mission.php"));
 require_once (get_theme_file_path("/inc/metaboxes/features.php"));
 require_once (get_theme_file_path("/inc/metaboxes/about.php"));
+require_once (get_theme_file_path("/inc/metaboxes/services.php"));
+require_once (get_theme_file_path("/inc/metaboxes/benefits.php"));
+require_once (get_theme_file_path("/inc/metaboxes/testimonials.php"));
 require_once (get_theme_file_path("/inc/metaboxes/page-sections.php"));
 
  // active modules
