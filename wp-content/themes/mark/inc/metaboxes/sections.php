@@ -25,7 +25,7 @@ function mark_section_type_metabox($metaboxes){
                             'benefits' => __('Benefits', 'mark'),
                             'testimonials' => __('Testimonials', 'mark'),
                             'image_info' => __('Image info', 'mark'),
-                            'counter' => __('Counter', 'mark'),
+                            'counter' => __('Fun Factor', 'mark'),
                             'cta' => __('Call To Action', 'mark'),
                             'portfilio' => __('Portfilio', 'mark'),
                             'pricing_plan' => __('Pricing plan', 'mark'),
