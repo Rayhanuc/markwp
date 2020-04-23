@@ -35,7 +35,7 @@ function mark_section_mission_metabox($metaboxes){
                         'id' => 'heading',
                         'type' => 'text',
                         'title' => __('Mission Heading', 'mark'),
-                        'default' => __('Here We Are', 'mark'),                       
+                        'default' => __('Here We Are', 'mark'),
                     ),
                     array(
                         'id' => 'sub-heading',

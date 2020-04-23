@@ -1,5 +1,6 @@
 <?php
 
+
 require_once (get_theme_file_path("/library/csf/cs-framework.php"));
 require_once (get_theme_file_path("/inc/metaboxes/sections.php"));
 require_once (get_theme_file_path("/inc/metaboxes/banner.php"));
@@ -11,6 +12,8 @@ require_once (get_theme_file_path("/inc/metaboxes/benefits.php"));
 require_once (get_theme_file_path("/inc/metaboxes/testimonials.php"));
 require_once (get_theme_file_path("/inc/metaboxes/image_info.php"));
 require_once (get_theme_file_path("/inc/metaboxes/counter.php"));
+require_once (get_theme_file_path("/inc/metaboxes/cta.php"));
+require_once (get_theme_file_path("/inc/metaboxes/team.php"));
 require_once (get_theme_file_path("/inc/metaboxes/page-sections.php"));
 
  // active modules
@@ -87,3 +90,27 @@ function mark_csf_init() {
     CSFramework_Metabox::instance(array());
 }
 add_action('init','mark_csf_init');
+
+function mark_get_social_fields() {
+    $fields = array();
+    
+    $social_profiles = apply_filters( 'mark_social_profiles', array('facebook','youtube','twitter'));
+    foreach($social_profiles as $social_profile) {
+        $field = array(
+            'id' => $social_profile,
+            'type' => 'text',
+            'title' => ucfirst($social_profile),
+        );
+        array_push($fields, $field);
+    }
+    return $fields;
+}
+
+/*
+function mark_social_profile_fields($profiles){
+    array_push($profiles,'kamba');
+    return $profiles;
+}
+add_filter('mark_social_profiles','mark_social_profile_fields');
+*/
+
