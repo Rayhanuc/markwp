@@ -14,6 +14,7 @@ require_once (get_theme_file_path("/inc/metaboxes/image_info.php"));
 require_once (get_theme_file_path("/inc/metaboxes/counter.php"));
 require_once (get_theme_file_path("/inc/metaboxes/cta.php"));
 require_once (get_theme_file_path("/inc/metaboxes/team.php"));
+require_once (get_theme_file_path("/inc/metaboxes/portfolio.php"));
 require_once (get_theme_file_path("/inc/metaboxes/page-sections.php"));
 
  // active modules
