@@ -29,7 +29,7 @@ function mark_section_type_metabox($metaboxes){
                             'cta' => __('Call To Action', 'mark'),
                             'team' => __('Team', 'mark'),
                             'portfolio' => __('Portfolio', 'mark'),
-                            'pricing_plan' => __('Pricing plan', 'mark'),
+                            'pricing' => __('Pricing plan', 'mark'),
                             'shop' => __('Shop', 'mark'),
                             'blog' => __('Blog', 'mark'),
                             'clients' => __('Clients', 'mark'),
