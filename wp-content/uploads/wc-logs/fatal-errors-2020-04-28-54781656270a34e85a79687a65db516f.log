@@ -48,3 +48,57 @@
 
 2020-04-28T09:52:12+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\ReportExporter.php on line 10
 
+2020-04-28T10:15:07+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Notes\WC_Admin_Notes_Woo_Subscriptions_Notes.php on line 12
+
+2020-04-28T10:41:00+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Notes\WC_Admin_Note.php on line 12
+
+2020-04-28T10:41:00+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\NoteActions.php on line 12
+
+2020-04-28T10:41:01+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\NoteActions.php on line 12
+
+2020-04-28T10:41:39+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-content\plugins\woocommerce\includes\class-wc-embed.php on line 9
+
+
+
+2020-04-28T10:43:24+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-admin\includes\class-wp-privacy-policy-content.php on line 10
+
+2020-04-28T10:49:06+00:00 CRITICAL require_once(): Failed opening required 'D:\xampp\htdocs\markwp/wp-content/themes/mark/inc/metaboxes/blog.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\markwp\wp-content\themes\mark\functions.php on line 20
+
+2020-04-28T10:49:10+00:00 CRITICAL require_once(): Failed opening required 'D:\xampp\htdocs\markwp/wp-content/themes/mark/inc/metaboxes/blog.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\markwp\wp-content\themes\mark\functions.php on line 20
+
+2020-04-28T11:03:38+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::post_title() in D:\xampp\htdocs\markwp\wp-content\themes\mark\section-templates\blog.php:33
+Stack trace:
+#0 D:\xampp\htdocs\markwp\wp-includes\template.php(725): require()
+#1 D:\xampp\htdocs\markwp\wp-includes\template.php(672): load_template('D:\\xampp\\htdocs...', false)
+#2 D:\xampp\htdocs\markwp\wp-includes\general-template.php(168): locate_template(Array, true, false)
+#3 D:\xampp\htdocs\markwp\wp-content\themes\mark\page-templates\landing.php(14): get_template_part('section-templat...')
+#4 D:\xampp\htdocs\markwp\wp-includes\template-loader.php(106): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\markwp\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\markwp\index.php(17): require('D:\\xampp\\htdocs...')
+#7 {main}
+  thrown in D:\xampp\htdocs\markwp\wp-content\themes\mark\section-templates\blog.php on line 33
+
+2020-04-28T11:04:36+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::post_title() in D:\xampp\htdocs\markwp\wp-content\themes\mark\section-templates\blog.php:33
+Stack trace:
+#0 D:\xampp\htdocs\markwp\wp-includes\template.php(725): require()
+#1 D:\xampp\htdocs\markwp\wp-includes\template.php(672): load_template('D:\\xampp\\htdocs...', false)
+#2 D:\xampp\htdocs\markwp\wp-includes\general-template.php(168): locate_template(Array, true, false)
+#3 D:\xampp\htdocs\markwp\wp-content\themes\mark\page-templates\landing.php(14): get_template_part('section-templat...')
+#4 D:\xampp\htdocs\markwp\wp-includes\template-loader.php(106): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\markwp\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\markwp\index.php(17): require('D:\\xampp\\htdocs...')
+#7 {main}
+  thrown in D:\xampp\htdocs\markwp\wp-content\themes\mark\section-templates\blog.php on line 33
+
+2020-04-28T11:21:33+00:00 CRITICAL Object of class WP_Post could not be converted to string in D:\xampp\htdocs\markwp\wp-includes\functions.php on line 247
+
+2020-04-28T12:04:14+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-admin\includes\file.php on line 16
+
+2020-04-28T16:24:53+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-content\plugins\woocommerce\packages\woocommerce-admin\includes\page-controller-functions.php on line 16
+
+2020-04-28T16:25:32+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-includes\wp-db.php on line 2024
+
+2020-04-28T16:25:33+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-admin\includes\admin.php on line 10
+
+2020-04-28T16:25:33+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-admin\includes\file.php on line 16
+

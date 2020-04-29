@@ -17,6 +17,7 @@ require_once (get_theme_file_path("/inc/metaboxes/team.php"));
 require_once (get_theme_file_path("/inc/metaboxes/portfolio.php"));
 require_once (get_theme_file_path("/inc/metaboxes/pricing.php"));
 require_once (get_theme_file_path("/inc/metaboxes/shop.php"));
+require_once (get_theme_file_path("/inc/metaboxes/blog.php"));
 require_once (get_theme_file_path("/inc/metaboxes/page-sections.php"));
 
  // active modules
@@ -45,6 +46,7 @@ function mark_theme_setup() {
     register_nav_menu("top-menu", __("Top Menu", "mark"));
 
     add_image_size('mark-fullsize', 1400, 99999);
+    add_image_size('mark-landscape-one', 583, 383, true);
 }
 add_action('after_setup_theme', 'mark_theme_setup');
 
