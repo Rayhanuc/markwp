@@ -1,0 +1,18 @@
+2020-05-01T12:52:53+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-includes\wp-db.php on line 2024
+
+2020-05-01T14:00:08+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-includes\class-wp-image-editor-gd.php on line 191
+
+2020-05-01T14:00:39+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-includes\class-wp-image-editor-gd.php on line 191
+
+2020-05-01T14:01:31+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-includes\class-wp-image-editor-gd.php on line 191
+
+2020-05-01T14:02:04+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-includes\class-wp-image-editor-gd.php on line 191
+
+2020-05-01T14:02:41+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-includes\class-wp-image-editor-gd.php on line 191
+
+2020-05-01T14:03:13+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-includes\class-wp-image-editor-gd.php on line 191
+
+2020-05-01T16:57:19+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-includes\Requests\Transport\cURL.php on line 441
+
+2020-05-01T22:30:33+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-includes\wp-db.php on line 2024
+

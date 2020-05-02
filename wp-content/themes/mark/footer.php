@@ -7,8 +7,11 @@
                      <div class="footer-logo">
                          <img src="<?php echo get_template_directory_uri();?>/assets/img/logo-dark.png" srcset="<?php echo get_template_directory_uri();?>/assets/img/logo-dark@2x.png 2x" alt="">
                      </div>
-                     <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
-                     <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque </p>
+                     <?php
+                     if(is_active_sidebar('footer-left')){
+                        dynamic_sidebar('footer-left');
+                     }
+                     ?>
 
                      <h5>FOLLOW US</h5>
                      <div class="footer-social-links">

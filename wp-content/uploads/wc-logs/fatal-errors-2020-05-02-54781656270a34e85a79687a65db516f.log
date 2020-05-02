@@ -1,0 +1,16 @@
+2020-05-02T05:59:06+00:00 CRITICAL Uncaught Error: Call to undefined function add_acftion() in D:\xampp\htdocs\markwp\wp-content\themes\mark\functions.php:139
+Stack trace:
+#0 D:\xampp\htdocs\markwp\wp-settings.php(514): include()
+#1 D:\xampp\htdocs\markwp\wp-config.php(90): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\markwp\wp-load.php(37): require_once('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\markwp\wp-admin\admin.php(34): require_once('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\markwp\wp-admin\index.php(10): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\markwp\wp-content\themes\mark\functions.php on line 139
+
+2020-05-02T05:59:46+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-includes\wp-db.php on line 2024
+
+2020-05-02T06:00:37+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-includes\wp-db.php on line 2024
+
+2020-05-02T06:00:53+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\markwp\wp-includes\Requests\Transport\cURL.php on line 441
+

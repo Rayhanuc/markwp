@@ -18,6 +18,8 @@ require_once (get_theme_file_path("/inc/metaboxes/portfolio.php"));
 require_once (get_theme_file_path("/inc/metaboxes/pricing.php"));
 require_once (get_theme_file_path("/inc/metaboxes/shop.php"));
 require_once (get_theme_file_path("/inc/metaboxes/blog.php"));
+require_once (get_theme_file_path("/inc/metaboxes/clients.php"));
+require_once (get_theme_file_path("/inc/metaboxes/subscription.php"));
 require_once (get_theme_file_path("/inc/metaboxes/page-sections.php"));
 
  // active modules
@@ -47,6 +49,7 @@ function mark_theme_setup() {
 
     add_image_size('mark-fullsize', 1400, 99999);
     add_image_size('mark-landscape-one', 583, 383, true);
+    add_image_size('mark-client-logo', 192, 99999);
 }
 add_action('after_setup_theme', 'mark_theme_setup');
 
@@ -119,3 +122,18 @@ function mark_social_profile_fields($profiles){
 add_filter('mark_social_profiles','mark_social_profile_fields');
 */
 
+
+function mark_widgets_init() {
+    register_sidebar(
+        array(
+            'name'          => __( 'Footer Section', 'markwp' ),
+            'id'            => 'footer-left',
+            'description'   => __( 'Footer section, Left side', 'markwp' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h5>',
+            'after_title'   => '</h5>',
+        )
+    );
+}
+add_action('widgets_init', 'mark_widgets_init');
