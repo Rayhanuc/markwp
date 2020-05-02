@@ -20,22 +20,50 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'markwp' );
 
-/** MySQL database username */
-define( 'DB_USER', 'root' );
 
-/** MySQL database password */
-define( 'DB_PASSWORD', '' );
 
-/** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+// define( 'DB_NAME', 'markwp' );
 
-/** Database Charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8mb4' );
+// /** MySQL database username */
+// define( 'DB_USER', 'root' );
 
-/** The Database Collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', '' );
+// /** MySQL database password */
+// define( 'DB_PASSWORD', '' );
+
+// /** MySQL hostname */
+// define( 'DB_HOST', 'localhost' );
+
+// /** Database Charset to use in creating database tables. */
+// define( 'DB_CHARSET', 'utf8mb4' );
+
+// /** The Database Collate type. Don't change this if in doubt. */
+// define( 'DB_COLLATE', '' );
+// 
+// 
+
+if (file_exists(dirname(__FILE__)."/local.php")) {
+	//Local database settings
+
+
+	define( 'DB_NAME', 'markwp' );
+	define( 'DB_USER', 'root' );
+	define( 'DB_PASSWORD', '' );
+	define( 'DB_HOST', 'localhost' );
+	define( 'DB_CHARSET', 'utf8mb4' );
+	define( 'DB_COLLATE', '' );
+}
+else{
+	//Live database settings
+	define( 'DB_NAME', 'epiz_25589315_markwp' );
+	define( 'DB_USER', 'root' );
+	define( 'DB_PASSWORD', '-_W+]x%udM8l' );
+	define( 'DB_HOST', 'ftpupload.net' );
+	define( 'DB_CHARSET', 'utf8mb4' );
+	define( 'DB_COLLATE', '' );
+}
+
+
 
 /**#@+
  * Authentication Unique Keys and Salts.
