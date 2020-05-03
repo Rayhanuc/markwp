@@ -1507,6 +1507,9 @@ footer
     color: #fff;
     border-radius: 3px;
 }
+
+/*Social Links BG color area start*/
+
 .footer-social-links .facebook
 {
     background: #465fa4;
@@ -1515,14 +1518,52 @@ footer
 {
     background: #55b4e6;
 }
+.footer-social-links .github
+{
+    background: #333;
+}
+.footer-social-links .pinterset
+{
+    background: #bd081c;
+}
+.footer-social-links .instagram
+{
+    background: #ffdc80;
+}
 .footer-social-links .google-plus
 {
     background: #f43c3c;
+}
+.footer-social-links .youtube
+{
+    background: #410093;
+}
+.footer-social-links .vimeo
+{
+    background: #1ab7ea;
+}
+.footer-social-links .tumblr
+{
+    background: #35465c;
+}
+.footer-social-links .dribble
+{
+    background: #ea4c89;
+}
+.footer-social-links .flickr
+{
+    background: #ff0084;
+}
+.footer-social-links .behance
+{
+    background: #1769ff;
 }
 .footer-social-links .rss
 {
     background: #fac94b;
 }
+
+/*Social Links BG color area end*/
 
 .copyright-section
 {

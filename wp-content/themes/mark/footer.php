@@ -13,13 +13,13 @@
                      }
                      ?>
 
-                     <h5>FOLLOW US</h5>
+                     <!-- <h5>FOLLOW US</h5>
                      <div class="footer-social-links">
                          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
                          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                          <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
                          <a href="#" class="rss"><i class="fa fa-rss"></i></a>
-                     </div>
+                     </div> -->
                  </div>
                  <div class="col-md-4 col-sm-6 p-right-80">
                      <div class="footer-title">
