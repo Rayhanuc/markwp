@@ -73,3 +73,7 @@ Stack trace:
 #8 D:\xampp\htdocs\markwp\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
 #9 D:\x in D:\xampp\htdocs\markwp\wp-content\plugins\mark-companion\widgets\mark-social-widget.php on line 35
 
+2020-05-03T23:36:30+00:00 CRITICAL syntax error, unexpected ';' in D:\xampp\htdocs\markwp\wp-content\themes\mark\functions.php on line 171
+
+2020-05-03T23:41:07+00:00 CRITICAL syntax error, unexpected ')' in D:\xampp\htdocs\markwp\wp-content\themes\mark\functions.php on line 55
+

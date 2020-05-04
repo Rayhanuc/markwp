@@ -2,6 +2,7 @@
 
 
 require_once (get_theme_file_path("/library/csf/cs-framework.php"));
+require_once (get_theme_file_path("/inc/tgm.php"));
 require_once (get_theme_file_path("/inc/metaboxes/sections.php"));
 require_once (get_theme_file_path("/inc/metaboxes/banner.php"));
 require_once (get_theme_file_path("/inc/metaboxes/mission.php"));
@@ -45,11 +46,15 @@ function mark_theme_setup() {
         'comment-list'
     ) );
     add_theme_support( 'custom-logo' );
-    register_nav_menu("top-menu", __("Top Menu", "mark"));
+    register_nav_menu("top-menu", __("Top Menu", "markwp"));
 
     add_image_size('mark-fullsize', 1400, 99999);
     add_image_size('mark-landscape-one', 583, 383, true);
     add_image_size('mark-client-logo', 192, 99999);
+
+    add_theme_support('customize-selective-refresh-widgets');
+
+    // register_nav_menu( 'footer-right', __('Footer Right','markwp') );
 }
 add_action('after_setup_theme', 'mark_theme_setup');
 
@@ -135,5 +140,42 @@ function mark_widgets_init() {
             'after_title'   => '</h5>',
         )
     );
+    register_sidebar(
+        array(
+            'name'          => __( 'Footer Middle Section', 'markwp' ),
+            'id'            => 'footer-middle',
+            'description'   => __( 'Footer middle section', 'markwp' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h5>',
+            'after_title'   => '</h5>',
+        )
+    );
+    register_sidebar(
+        array(
+            'name'          => __( 'Footer Right Section', 'markwp' ),
+            'id'            => 'footer-right',
+            'description'   => __( 'Footer right section', 'markwp' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h5>',
+            'after_title'   => '</h5>',
+        )
+    );
 }
 add_action('widgets_init', 'mark_widgets_init');
+
+
+add_filter('wp_calculate_image_srcset_meta', '__return_empty_array');
+
+
+function mark_widget_nav_menu_args($nav_menu_args, $nav_menu, $args, $instance) {
+    if (isset($nav_menu_args['menu_class'])) {
+        $nav_menu_args['menu_class'] .= 'list-unstyled short-links';
+    } else {
+        $nav_menu_args['menu_class'] = 'list-unstyled short-links';
+    }
+
+    return $nav_menu_args;
+}
+add_filter('widget_nav_menu_args','mark_widget_nav_menu_args',10,4);

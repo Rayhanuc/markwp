@@ -1,0 +1,321 @@
+# Copyright (C) 2014
+# This file is distributed under the same license as the plugin package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Recent Posts Widget With Thumbnails\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/plugins/recent-posts-widget-with-"
+"thumbnails\n"
+"POT-Creation-Date: 2020-01-14 22:28+0100\n"
+"PO-Revision-Date: 2020-01-14 22:29+0100\n"
+"Last-Translator: \n"
+"Language-Team: Martin Stehle <m.stehle@gmx.de>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x;esc_html_e;esc_html__;esc_attr_e;"
+"esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/form.php:10
+msgid "Open post links in new windows?"
+msgstr "¿Abrir los enlaces de las entradas en ventanas nuevas?"
+
+#: includes/form.php:13
+msgid "Show posts in random order?"
+msgstr "¿Mostrar las entradas en orden aleatorio?"
+
+#: includes/form.php:16
+msgid "Do not show the current post?"
+msgstr "¿No mostrar la entrada actual?"
+
+#: includes/form.php:21
+msgid "Show only sticky posts?"
+msgstr "¿Mostrar sólo entradas fijas?"
+
+#: includes/form.php:22
+msgid ""
+"If activated the options to hide sticky posts and to keep them on top will "
+"be ignored."
+msgstr ""
+"Si está activada, la opción de ocultar las entradas fijas y mantenerlos en "
+"la parte superior será ignorada."
+
+#: includes/form.php:25
+msgid "Do not show sticky posts?"
+msgstr "¿No mostrar las entradas fijas?"
+
+#: includes/form.php:26
+msgid "If activated the option to keep sticky posts on top will be ignored."
+msgstr ""
+"Si está activada, la opción de mantener las entradas fijas en la parte "
+"superior, se ignorará."
+
+#: includes/form.php:29
+msgid "Keep sticky posts on top of the list?"
+msgstr "¿Mantener las entradas fijas en la parte superior de la lista?"
+
+#: includes/form.php:34
+msgid "Do not show post title?"
+msgstr "¿No mostrar el título de la entrada?"
+
+#: includes/form.php:35
+msgid ""
+"Make sure you set a default thumbnail for posts without a thumbnail, "
+"otherwise there will be no link."
+msgstr ""
+"Asegúrate de establecer una miniatura predeterminada para las entradas sin "
+"una miniatura, de lo contrario no habrá ningún enlace."
+
+#: includes/form.php:37
+msgid "Maximum length of post title"
+msgstr "Longitud máxima del título de la entrada"
+
+#: includes/form.php:43
+msgid "Show post author?"
+msgstr "¿Mostrar el autor de la entrada?"
+
+#: includes/form.php:48
+msgid "Show post categories?"
+msgstr "¿Mostrar categorías de la entrada?"
+
+#: includes/form.php:51
+msgid "Set post category names as links, pointing to their archives?"
+msgstr ""
+"¿Poner los nombres de las categorías de las entradas como enlaces, apuntando "
+"a sus archivos?"
+
+#: includes/form.php:53
+msgid "Label for categories:"
+msgstr "Etiqueta para las categorías:"
+
+#: includes/form.php:55
+msgid "This field can be empty."
+msgstr "Este campo puede estar vacío."
+
+#: includes/form.php:60
+msgid "Show post date?"
+msgstr "¿Mostrar la fecha de entrada?"
+
+#: includes/form.php:65
+msgid "Show excerpt?"
+msgstr "¿Mostrar el extracto?"
+
+#: includes/form.php:67
+msgid "Maximum length of excerpt"
+msgstr "Longitud máxima del extracto"
+
+#: includes/form.php:70
+msgid "Signs after excerpt"
+msgstr "Señales después del extracto"
+
+#: includes/form.php:74
+msgid "Set signs after excerpt as a link to the post?"
+msgstr "¿Poner carteles después del extracto como enlace a la entrada?"
+
+#: includes/form.php:77
+msgid "Ignore post excerpt field as excerpt source?"
+msgstr "¿Ignorar el campo de extracto de la entrada como fuente de extracto?"
+
+#: includes/form.php:78
+msgid ""
+"Normally the widget takes the excerpt from the text of the excerpt field "
+"unchanged and if there is no text it creates the excerpt from the post "
+"content automatically. If this option is activated the excerpt is created "
+"from the post content only."
+msgstr ""
+"Normalmente el widget toma el extracto del texto del campo extracto sin "
+"modificar y si no hay texto, crea el extracto del contenido de la entrada "
+"automáticamente. Si esta opción está activada, el extracto se crea sólo a "
+"partir del contenido de la entrada."
+
+#: includes/form.php:81
+msgid "Ignore post content as excerpt source?"
+msgstr "¿Ignorar el contenido de la entrada como fuente de extractos?"
+
+#: includes/form.php:82
+msgid ""
+"If activated, the excerpts are created only by the excerpt fields. If both "
+"Ignore checkboxes are activated no excerpts are displayed in the list."
+msgstr ""
+"Si está activada, los extractos se crean sólo por los campos de extracto. Si "
+"ambas casillas de selección Ignorar están activadas, no se visualiza ningún "
+"extracto en la lista."
+
+#: includes/form.php:87
+msgid "Show number of comments?"
+msgstr "¿Muestra el número de comentarios?"
+
+#: includes/form.php:91
+msgid "Show posts of selected categories only?"
+msgstr "¿Mostrar sólo las entradas de las categorías seleccionadas?"
+
+#: includes/form.php:93
+#, php-format
+msgid ""
+"Click on the categories with pressed CTRL key to select multiple categories. "
+"If &#8220;%s&#8221; was selected then other selections will be ignored."
+msgstr ""
+"Haga clic en las categorías con la tecla CTRL presionada para seleccionar "
+"varias categorías. Si &#8220;%s&#8221; fue seleccionado entonces otras "
+"selecciones serán ignoradas."
+
+#: includes/form.php:98
+msgid "Show thumbnail?"
+msgstr "¿Mostrar la miniatura?"
+
+#: includes/form.php:99
+msgid ""
+"By default, the featured image of the post is used as long as the next "
+"checkboxes do not specify anything different."
+msgstr ""
+"Por defecto, se utiliza la imagen destacada de la entrada siempre y cuando "
+"las siguientes casillas de verificación no especifiquen nada diferente."
+
+#: includes/form.php:101
+msgid "Size of thumbnail"
+msgstr "Tamaño de la miniatura"
+
+#: includes/form.php:103
+msgid "Specified width and height"
+msgstr "Anchura y altura especificadas"
+
+#: includes/form.php:113
+#, php-format
+msgid ""
+"If you use a specified size the following sizes will be taken, otherwise "
+"they will be ignored and the selected dimension as stored in %s will be used:"
+msgstr ""
+"Si utiliza un tamaño especificado, se tomarán los siguientes tamaños, de lo "
+"contrario se ignorarán y se utilizará la dimensión seleccionada almacenada "
+"en %s:"
+
+#: includes/form.php:116
+msgid "Width of thumbnail"
+msgstr "Ancho de la miniatura"
+
+#: includes/form.php:119
+msgid "Height of thumbnail"
+msgstr "Altura de la miniatura"
+
+#: includes/form.php:123
+msgid "Use aspect ratios of original images?"
+msgstr "¿Utilizar las relaciones de aspecto de las imágenes originales?"
+
+#: includes/form.php:124
+msgid ""
+"If activated the given width is used to determine the height of the "
+"thumbnail automatically. This option also supports responsive web design."
+msgstr ""
+"Si está activado, el ancho dado se utiliza para determinar automáticamente "
+"la altura de la miniatura. Esta opción también soporta el diseño de páginas "
+"web sensibles."
+
+#: includes/form.php:127
+msgid "Try to use the post's first image if post has no featured image?"
+msgstr ""
+"¿Intenta utilizar la primera imagen de la entrada si ésta no tiene una "
+"imagen destacada?"
+
+#: includes/form.php:130
+msgid "Use first image only, ignore featured image?"
+msgstr "¿Utilizar sólo la primera imagen, ignorar la imagen destacada?"
+
+#: includes/form.php:133
+msgid "Use default thumbnail if no image could be determined?"
+msgstr ""
+"¿Utilizar la miniatura por defecto si no se ha podido determinar ninguna "
+"imagen?"
+
+#: includes/form.php:136
+msgid "Ignore all thumbnails and always use only the default thumbnail?"
+msgstr ""
+"¿Ignorar todas las miniaturas y usar siempre sólo la miniatura "
+"predeterminada?"
+
+#: includes/form.php:138
+msgid "URL of default thumbnail (start with http://)"
+msgstr "URL de la miniatura predeterminada (comienza con http://)"
+
+#: includes/form.php:144
+msgid "Print slugs of post categories in class attribute of LI elements?"
+msgstr ""
+"¿Impresión de slugs de categorías de mensajes en el atributo de clase de los "
+"elementos LI?"
+
+#: includes/form.php:145
+msgid ""
+"For developers: If checked you can set CSS rules for each list item on base "
+"of the assigned categories."
+msgstr ""
+"Para los desarrolladores: Si está marcada, eres capaz establecer reglas CSS "
+"para cada elemento de la lista en base a las categorías asignadas."
+
+#: includes/form.php:148
+msgid "Print inline CSS instead of creating a CSS file?"
+msgstr "¿Imprimir un CSS en línea en lugar de crear un archivo CSS?"
+
+#: includes/form.php:149 includes/form.php:153
+msgid "If activated this option applies to all instances of this widget."
+msgstr ""
+"Si está activada, esta opción se aplica a todas las instancias de este "
+"widget."
+
+#: includes/form.php:152
+msgid "No CSS generation at all, neither inline CSS nor a CSS file?"
+msgstr ""
+"¿No hay generación de CSS en absoluto, ni CSS en línea ni un archivo CSS?"
+
+#: includes/form.php:156
+msgid "Do you like the plugin?"
+msgstr "¿Te gusta el plugin?"
+
+#: includes/form.php:156
+msgid "Please rate it at wordpress.org!"
+msgstr "Por favor, califíquelo en wordpress.org!"
+
+#: includes/form.php:157
+msgid "Do you need more options?"
+msgstr "¿Necesita más opciones?"
+
+#: includes/form.php:157
+msgid "Get Ultimate Post List Pro!"
+msgstr "Obtenga Ultimate Post List Pro!"
+
+#: recent-posts-widget-with-thumbnails.php:66
+msgctxt "In {categories}"
+msgid "In"
+msgstr "En"
+
+#: recent-posts-widget-with-thumbnails.php:100
+msgid "Recent Posts With Thumbnails"
+msgstr "Entradas recientes con miniaturas"
+
+#: recent-posts-widget-with-thumbnails.php:101
+msgid ""
+"List of your site&#8217;s most recent posts, with clickable title and "
+"thumbnails."
+msgstr ""
+"Lista de las entradas más recientes de su sitio web, con título e imágenes "
+"en miniatura sobre las que se puede hacer clic."
+
+#: recent-posts-widget-with-thumbnails.php:766
+msgid "Error on listing categories"
+msgstr "Error en las categorías de listado"
+
+#~ msgid ""
+#~ "Creates the excerpt from the post content automatically even there is an "
+#~ "entry in the excerpt field of the post."
+#~ msgstr ""
+#~ "Crea el extracto del contenido de la entrada automáticamente incluso si "
+#~ "hay una entrada en el campo de extracto de la entrada."
+
+#~ msgid ""
+#~ "Small and fast plugin to display in the sidebar a list of linked titles "
+#~ "and thumbnails of the most recent postings"
+#~ msgstr ""
+#~ "Pequeño y rápido plugin para mostrar en la barra lateral una lista de "
+#~ "títulos vinculados y miniaturas de las entradas más recientes"
