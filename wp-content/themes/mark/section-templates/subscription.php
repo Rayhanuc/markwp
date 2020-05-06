@@ -5,7 +5,7 @@ $mark_section_meta = get_post_meta( $mark_section['section'], 'mark-section-subs
 
 
 <!-- subscribe section start -->
-<section class="space-2 subscribe-from">
+<section id="<?php echo get_post_field( 'post_name', $mark_section['section']) ; ?>" class="space-2 subscribe-from">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

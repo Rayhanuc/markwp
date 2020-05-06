@@ -5,7 +5,7 @@ $mark_pricing_plans = $mark_section_meta['plans'];
 ?>
 
 <!-- pricing section start -->
-<section class="price-table-section" id="pricing">
+<section id="<?php echo get_post_field( 'post_name', $mark_section['section']) ; ?>" class="price-table-section" id="pricing">
     <div class="space-3 parallax price-bg-height" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/parallax.jpg');">
         <div class="container">
             <div class="row justify-content-md-center">

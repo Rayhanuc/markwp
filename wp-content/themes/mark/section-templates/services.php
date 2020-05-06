@@ -6,7 +6,7 @@ $mark_section_meta = get_post_meta( $mark_section['section'], 'mark-services-sec
 ?>
 
     <!--service section start-->
-    <section class="space-3" id="services">
+    <section id="<?php echo get_post_field( 'post_name', $mark_section['section']) ; ?>" class="space-3" id="services">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">

@@ -13,7 +13,7 @@ $mark_products = new WP_Query($mark_product_args);
 
 
 <!--product section start-->
-<section class="space-3 space-adjust" id="shop">
+<section id="<?php echo get_post_field( 'post_name', $mark_section['section']) ; ?>" class="space-3 space-adjust" id="shop">
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-md-8">

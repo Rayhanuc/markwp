@@ -16,7 +16,7 @@ if ($mark_banner_image_id) {
 
 
 <div id="home">
-    <section class="hero js_full_height base-gradient " style="background-image: url('<?php echo esc_url($mark_banner_image[0]);?>');">
+    <section id="<?php echo get_post_field( 'post_name', $mark_section['section']) ; ?>" class="hero js_full_height base-gradient " style="background-image: url('<?php echo esc_url($mark_banner_image[0]);?>');">
         <div class="arrow-bottom-shape"> </div>
         <div class="hero-content light-txt text-center">
             <div class="container">

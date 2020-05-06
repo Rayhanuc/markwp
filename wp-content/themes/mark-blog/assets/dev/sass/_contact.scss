@@ -1,0 +1,47 @@
+input.form-control{
+    height: 50px;
+}
+
+.contact-wrapper{
+    p{
+        font-size: 14px;
+    }
+}
+
+.contact-form {
+    margin-top: 90px;
+    .form-control{
+        border: none;
+    }
+
+    button{
+        outline: none;
+        &:hover, &:focus, &:active:focus{
+            color: $white;
+            outline: none;
+        }
+    }
+
+}
+
+.comments-form {
+  .form-control {
+    border-color: #e8e8e8;
+    box-shadow: none;
+    &:focus{
+      border-color: $black;
+    }
+  }
+  .btn-black {
+    background: $black-light;
+    color: $white;
+    &:hover{
+      background: $black;
+    }
+  }
+}
+
+.section-adjust {
+  position: relative;
+  top: -25px;
+}

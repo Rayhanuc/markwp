@@ -5,7 +5,7 @@ $mark_section_meta = get_post_meta( $mark_section['section'], 'mark-features-sec
 ?>
 
 <!--feature section start-->
-<section class="space-3 section-gray">
+<section id="<?php echo get_post_field( 'post_name', $mark_section['section']) ; ?>" class="space-3 section-gray">
     <div class="arrow-top-shape"> </div>
     <div class="container">
         <div class="row justify-content-md-center">

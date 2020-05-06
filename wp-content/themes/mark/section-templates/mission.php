@@ -6,7 +6,7 @@ $mark_section_meta = get_post_meta( $mark_section['section'], 'mark-section-miss
 ?>
 
 <!--about section start-->
-<section class="space-3 space-adjust">
+<section id="<?php echo get_post_field( 'post_name', $mark_section['section']) ; ?>" class="space-3 space-adjust">
     <div class="container sm-center">
         <div class="row">
             <div class="col-md-12">

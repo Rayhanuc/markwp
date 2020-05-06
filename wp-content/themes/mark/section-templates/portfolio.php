@@ -18,7 +18,7 @@ if (count($mark_images)>0) {
 
 
 <!--portfolio section start-->
-<section class="space-3 space-adjust" id="portfolio">
+<section id="<?php echo get_post_field( 'post_name', $mark_section['section']) ; ?>" class="space-3 space-adjust" id="portfolio">
     <div class="section-title text-center">
         <h2 class="title">
             <?php 

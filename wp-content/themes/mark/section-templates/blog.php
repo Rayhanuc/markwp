@@ -18,7 +18,7 @@
 
 
 <!--blog section start-->
-<section class="blog-block" id="blog">
+<section id="<?php echo get_post_field( 'post_name', $mark_section['section']) ; ?>" class="blog-block" id="blog">
     <!--<div class="">-->
     <div class="row">
         <div class="col-md-6 align-self-center">

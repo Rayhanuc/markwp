@@ -12,7 +12,7 @@ if ($mark_benefit_image_id) {
 
 
 <!--block section start-->
-    <section class="space-3 section-gray">
+    <section id="<?php echo get_post_field( 'post_name', $mark_section['section']) ; ?>" class="space-3 section-gray">
         <div class="container">
             <div class="row">
 

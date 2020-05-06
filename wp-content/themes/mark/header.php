@@ -28,50 +28,32 @@
                         </button>
                         <!--responsive toggle icon-->
 
-                        <!--nav link-->
-                        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link scroll_to" href="#home">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link scroll_to" href="#services">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link scroll_to" href="#testimonial">Testimonial</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link scroll_to" href="#team">Team</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link scroll_to" href="#portfolio">Portfolio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link scroll_to" href="#pricing">Pricing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link scroll_to" href="#shop">Shop</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link scroll_to" href="#blog">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link scroll_to" href="#contact">Contact</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        More
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">WooCommerce Shop</a>
-                                        <a class="dropdown-item" href="#">Blog List</a>
-                                        <a class="dropdown-item" href="#">Blog Details</a>
-                                    </div>
-                                </li>
+                        <!-- Top menu area star -->
+                        <?php
+                            $mark_menu = wp_nav_menu( array(
+                                'container_id'    => 'navbarsExampleDefault',
+                                'container_class' => 'collapse navbar-collapse',
+                                'menu_class'      => 'navbar-nav ml-auto',
+                                'theme_location'  => 'top-menu',
+                                'echo'            => false,
 
-                            </ul>
-                        </div>
-                        <!--nav link-->
+                                /*'menu'            => '',
+                                'container'       => 'div',
+                                'menu_id'         => '',
+                                'fallback_cb'     => 'wp_page_menu',
+                                'before'          => '',
+                                'after'           => '',
+                                'link_before'     => '',
+                                'link_after'      => '',
+                                'items_wrap'      => '<ul id = "%1$s" class = "%2$s">%3$s</ul>',
+                                'depth'           => 0,
+                                'walker'          => '',*/
+                            ) );
+
+                            $mark_menu = str_replace('<a ', '<a class="nav-link scroll_to" ', $mark_menu);
+                            echo wp_kses_post( $mark_menu );
+                        ?>
+                        <!-- Top menu area end -->
                     </nav>
 
 

@@ -58,6 +58,18 @@ function mark_theme_setup() {
 }
 add_action('after_setup_theme', 'mark_theme_setup');
 
+// Nav manu custom-css add 04/05/2020 12:47 PM 
+function mark_menu_filter( $classes, $item, $args) { 
+    if ( 'top-menu' == $args->theme_location ) {
+        $classes[] = "nav-item";
+    }
+ 
+    return $classes;
+}
+ 
+add_filter( 'nav_menu_css_class', 'mark_menu_filter', 10, 3 );
+
+
 function mark_assets(){
     // css enqueue start
     $css_files = array(
@@ -179,3 +191,22 @@ function mark_widget_nav_menu_args($nav_menu_args, $nav_menu, $args, $instance) 
     return $nav_menu_args;
 }
 add_filter('widget_nav_menu_args','mark_widget_nav_menu_args',10,4);
+
+
+function mark_change_nav_menu($menus){
+    $string_to_replace = home_url("/"). "section/";
+    if (is_front_page()) {
+        foreach ($menus as $menu) {
+            $new_url = str_replace($string_to_replace, "#", $menu->url);
+
+            if ($new_url != $menu->url) {
+                $new_url = rtrim($new_url, "/");
+            }
+
+            $menu->url = $new_url;
+        }
+    }
+
+    return $menus;
+}
+add_filter('wp_nav_menu_objects','mark_change_nav_menu');

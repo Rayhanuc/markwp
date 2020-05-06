@@ -8,7 +8,7 @@ $mark_column = $mark_columns[count($mark_fun_factors)];
 ?>
 
 <!-- fun factor section start -->
-<section class="space-3">
+<section id="<?php echo get_post_field( 'post_name', $mark_section['section']) ; ?>" class="space-3">
     <div class="container">
         <div class="row">
             <?php 

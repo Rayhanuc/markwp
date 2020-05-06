@@ -14,7 +14,7 @@ if ($mark_cta_image_id) {
 
 
 <!-- parallax section start -->
-<section class="space-3 parallax base-gradient" style="background-image: url('<?php echo esc_url($mark_cta_image[0]);?>');">
+<section id="<?php echo get_post_field( 'post_name', $mark_section['section']) ; ?>" class="space-3 parallax base-gradient" style="background-image: url('<?php echo esc_url($mark_cta_image[0]);?>');">
     <div class="arrow-bottom-shape"> </div>
     <div class="container">
         <div class="row justify-content-md-center">

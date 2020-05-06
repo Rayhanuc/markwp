@@ -7,7 +7,7 @@ $mark_section_meta = get_post_meta( $mark_section['section'], 'mark-team-section
 
 
 <!--team section start-->
-<section class="space-3 space-adjust" id="team">
+<section id="<?php echo get_post_field( 'post_name', $mark_section['section']) ; ?>" class="space-3 space-adjust" id="team">
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-md-8">
